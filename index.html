@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda online de productos tecnológicos">
+    <title>TechShop - Tienda de Tecnología</title>
+</head>
+<body>
+    <header>
+        <h1>TechShop</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#filtros">Filtros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="inicio">
+        <section id="productos" aria-labelledby="producto-destacado">
+            <h2 id="producto-destacado">Producto Destacado</h2>
+
+            <article>
+                <figure>
+                    <img src="imagenes/notebook.jpg" alt="Notebook Gamer XT 15,6 pulgadas" width="300">
+                    <figcaption>Notebook Gamer XT 15,6"</figcaption>
+                </figure>
+                <h3>Notebook Gamer XT 15,6"</h3>
+                <p>Notebook con procesador de última generación, 16 GB de RAM y disco SSD de 512 GB. Ideal para gaming y trabajo pesado.</p>
+                <p>Precio: <strong>$1.499.999</strong></p>
+                <button type="button">Agregar al carrito</button>
+            </article>
+        </section>
+
+        <aside id="filtros" aria-label="Filtros de búsqueda">
+            <h2>Filtros</h2>
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Categoría</legend>
+                    <label><input type="checkbox" name="categoria" value="notebooks"> Notebooks</label>
+                    <label><input type="checkbox" name="categoria" value="celulares"> Celulares</label>
+                    <label><input type="checkbox" name="categoria" value="accesorios"> Accesorios</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Rango de precio</legend>
+                    <label for="precio-min">Mínimo</label>
+                    <input type="number" id="precio-min" name="precio_min" min="0" step="1000">
+                    <label for="precio-max">Máximo</label>
+                    <input type="number" id="precio-max" name="precio_max" min="0" step="1000">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Ordenar por</legend>
+                    <label for="orden">Orden</label>
+                    <select id="orden" name="orden">
+                        <option value="relevancia">Relevancia</option>
+                        <option value="precio-asc">Precio: menor a mayor</option>
+                        <option value="precio-desc">Precio: mayor a menor</option>
+                        <option value="nombre">Nombre</option>
+                    </select>
+                </fieldset>
+
+                <button type="submit">Aplicar filtros</button>
+            </form>
+        </aside>
+    </main>
+
+    <footer id="contacto">
+        <h2>Contacto</h2>
+        <address>
+            <p>Email: <a href="mailto:contacto@techshop.com">contacto@techshop.com</a></p>
+            <p>Teléfono: <a href="tel:+5491100000000">+54 9 11 0000-0000</a></p>
+            <p>Dirección: Av. Corrientes 1234, Buenos Aires, Argentina</p>
+        </address>
+        <nav aria-label="Redes sociales">
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">X (Twitter)</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 TechShop. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
